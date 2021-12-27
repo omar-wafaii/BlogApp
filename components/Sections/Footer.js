@@ -6,8 +6,8 @@ import { GitHub } from "@material-ui/icons";
 
 export default function Footer() {
   return (
-    <div className="mt-10 ">
-      <div className="text-sm flex items-center justify-start space-x-2 mb-5">
+    <div className="mt-3 ">
+      <div className="text-sm p-4 flex items-center justify-start space-x-2 mb-5">
         <div className="hover:bg-blue-400 text-white h-8 w-8 rounded-full flex items-center justify-center ">
           <Facebook />
         </div>
@@ -22,8 +22,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=" bg-gray-800 text-sm text-white">
-        <ul className=" space-x-3 flex items-center p-2 w-full flex-wrap">
+      <div className=" bg-gray-800 text-sm text-white py-4 rounded-md ">
+        <ul className=" space-x-3 flex items-center p-2 w-full flex-wrap ">
           <div>
             {" "}
             <li className="hover:cursor-pointer hover:text-red-200">Home</li>

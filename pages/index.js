@@ -3,6 +3,8 @@ import Postcard from "../components/Cards/PostCard";
 import Link from "next/link";
 import posts from "../data/postsData.js";
 import Section from "../components/Sections/Section";
+import { Email } from "@material-ui/icons";
+import Button from "../components/Button";
 export default function Home() {
   return (
     <div className="">
@@ -16,7 +18,7 @@ export default function Home() {
       {/* section 1 */}
       <Section>
         <div className="flex items-center  flex-wrap ">
-          <h1 className="w-full p-5 font-bold"> Section Title </h1>
+          <h1 className="w-full p-5 font-bold text-xl"> Popular Posts </h1>
           {posts.map((e, i) => (
             <Link href={`posts/${e.id}`} key={i}>
               <a>
@@ -26,10 +28,14 @@ export default function Home() {
           ))}
         </div>
       </Section>
-      
-      <Section>
-            
-      </Section>
+        
+        <section className="w-full font-bold py-10 rounded-md mx-auto drop-shadow my-10 bg-white text-xl flex justify-center items-center ">
+            <div className="flex flex-col justify-center items-center space-y-3">
+              <img src="https://www.pikpng.com/pngl/m/47-479765_hope-icons-mail-email-icon-png-green-clipart.png" className="object-cover w-10 h-10 rounded-md" alt="" />
+              <h1>Subscribe To Our Newsletter</h1>
+              <Button text={"Subscribe"}/>
+            </div>
+        </section>
     </div>
   );
 }

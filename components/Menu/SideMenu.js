@@ -12,7 +12,7 @@ import Footer from "../Sections/Footer";
 const Sidemenu = ({ sideNav, setSideNav }) => {
   return (
     <div
-      className={`p-2 h-screen  z-50  bg-gray-800 left-0 top-0 sticky shadow-lg shadow-slate-400 `}
+      className={`text-sm md:text-l p-2 h-screen  z-50  bg-gray-900 left-0 top-0 sticky shadow-lg shadow-slate-400 `}
     >
       {/* top */}
       <div className="w-full p-1 text-white flex md:hidden  space-x-2 justify-between items-center ">
@@ -67,7 +67,7 @@ const Sidemenu = ({ sideNav, setSideNav }) => {
             <SearchInput />
           </div>
 
-          <div className=" flex justify-center items-center w-full mt-20">
+          <div className=" flex justify-center items-center w-full mt-10">
             <div className="text-white  space-y-3 w-full">
             <Link href="/">
                 <a>
