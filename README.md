@@ -1,1 +1,1 @@
-A Simple Blog App
+A Simple Blog App - Front End
